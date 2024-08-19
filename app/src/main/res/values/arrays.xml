@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ReminderTypes">
+    <item>Before Breakfast</item>
+    <item>After Breakfast</item>
+
+    <item>Before Lunch</item>
+    <item>After Lunch</item>
+
+    <item>Before Dinner</item>
+    <item>After Dinner</item>
+    </string-array>
+</resources>

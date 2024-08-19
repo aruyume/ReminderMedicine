@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ReminderMedicine</string>
+    <string name="date_and_time"><![CDATA[Date & Time]]></string>
+    <string name="reminder_types">Reminder Types</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_reminder">add reminder</string>
+    <string name="title">Title</string>
+    <string name="select">Select</string>
+    <string name="cancel">Cancel</string>
+    <string name="types_of_tablets">Types of tablets</string>
+    <string name="info">Info</string>
+    <string name="new_reminder">New Reminder</string>
+    <string name="drink">Drink</string>
+    <string name="increment">+</string>
+    <string name="decrement">-</string>
+    <string name="time_amp_shedule"><![CDATA[Time & Shedule]]></string>
+    <string name="amount">Amount</string>
+    <string name="max_amount">Max amount</string>
+</resources>

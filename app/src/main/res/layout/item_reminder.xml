@@ -1,0 +1,112 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:background="@drawable/bg_btn"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingStart="20dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/btn_inc"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/title" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/btn_dec"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:text="Info" />
+
+    <Button
+        android:id="@+id/tv_reminderType"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_dark_blue"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_info"
+        tools:text="Before Breakfast" />
+
+    <ImageView
+        android:id="@+id/img_reminder"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_default"
+        app:layout_constraintBottom_toBottomOf="@id/tv_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_reminder"
+        tools:text="20/20" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_inc"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/dark_blue"
+        android:gravity="center"
+        android:text="@string/increment"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toStartOf="@id/img_reminder"
+        app:layout_constraintTop_toTopOf="@id/tv_title" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_dec"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/dark_blue"
+        android:gravity="center"
+        android:text="@string/decrement"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/img_reminder"
+        app:layout_constraintTop_toBottomOf="@id/btn_inc" />
+</androidx.constraintlayout.widget.ConstraintLayout>
